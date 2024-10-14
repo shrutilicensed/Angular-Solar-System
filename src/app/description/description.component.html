@@ -1,0 +1,20 @@
+<div class="description-container">
+  <div class="description-content">
+    <p>Name : {{ planet.planet }}</p>
+    <p>Discovered By: {{ planet.Discoveredby }}</p>
+    <p>Discovery Date : {{ planet.Discoverydate }}</p>
+    <p>Avgtemp: {{ planet.Avgtemp }}</p>
+    <p>Dimension: {{ planet.Dimension }}</p>
+    <p>Mass: {{ planet.Mass }}</p>
+    <p>Volume: {{ planet.Volume }}</p>
+    <p>Density: {{ planet.Density }}</p>
+    <p>Gravity: {{ planet.Gravity }}</p>
+    <p>Racdius: {{ planet.Radius }}</p>
+    <p>Semimajoraxis: {{ planet.Semimajoraxis }}</p>
+    <p>Perihelion: {{ planet.Perihelion }}</p>
+    <p>Inclination: {{ planet.Inclination }}</p>
+
+    <button class="go-back-btn" (click)="onGoToCosmos()">Go Back</button>
+  </div>
+  <img [src]="planet.img" />
+</div>

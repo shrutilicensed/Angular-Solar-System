@@ -1,0 +1,59 @@
+/* Minimalistic design for home component */
+
+/* Background and container styling */
+.home-container {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Arial", sans-serif; /* Simple font */
+  padding: 0 20px; /* Padding to avoid text sticking to the edges */
+  box-sizing: border-box;
+}
+
+/* Main heading style */
+h1 {
+  font-size: 48px; /* Large font size */
+  margin-bottom: 20px; /* Space between heading and title */
+  font-weight: 600; /* Semi-bold font */
+}
+
+/* Subheading (title) style */
+h2 {
+  font-size: 32px; /* Smaller than the main heading */
+  margin-bottom: 15px; /* Space between title and description */
+  font-weight: 400; /* Regular weight for a minimalistic feel */
+}
+
+/* Description paragraph style */
+p {
+  font-size: 18px; /* Normal text size */
+  line-height: 1.6; /* Slightly increased line-height for readability */
+  margin-bottom: 30px; /* Space between paragraph and button */
+}
+
+/* Button styling */
+button {
+  background: none;
+  color: #fff; /* White text */
+  border: 2px solid #fff; /* Simple white border */
+  padding: 10px 20px;
+  font-size: 16px; /* Button font size */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000; /* Invert colors on hover */
+}
+
+button:active {
+  background-color: #f0f0f0;
+  color: #000;
+}

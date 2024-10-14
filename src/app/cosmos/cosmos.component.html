@@ -1,0 +1,19 @@
+<h1>The Planets</h1>
+<div class="planets-grid">
+  <div
+    *ngFor="let planet of planets; index as i"
+    class="planet-card"
+    [id]="'planetDiv-' + planet.id"
+    (click)="onClickPlanet(planet)"
+  >
+    <img [src]="planet.img" [id]="'planet-' + planet.id" />
+    <p [id]="'planet-' + planet.id">{{ planet.planet }}</p>
+  </div>
+</div>
+<button class="go-back-btn" (click)="onGoBack()">Go Back</button>
+
+<app-description
+  *ngIf="selectedPlanet"
+  [planet]="selectedPlanet"
+  (goBack)="handleGoToCosmos()"
+></app-description>
